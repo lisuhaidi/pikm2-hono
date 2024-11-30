@@ -1,7 +1,6 @@
-const { serve } = require('bun');
+import { serve } from 'bun';
+import app from '../../src/index';
 
 serve({
-    fetch(req) {
-        return new Response('Hello from Bun!');
-    },
+    fetch: app.fetch,
 });

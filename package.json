@@ -1,7 +1,9 @@
 {
   "name": "bun-hono-restfulapi",
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.ts",
+    "build": "bun build",
+    "start": "bun run netlify/functions/server.js"
   },
   "dependencies": {
     "@prisma/client": "^5.22.0",
