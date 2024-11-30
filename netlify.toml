@@ -2,5 +2,6 @@
 directory = "netlify/functions"
 
 [build]
-command = "bun install && bun build"
+command = "bun install && bun build src/index.ts --outdir dist"
 publish = "dist"
+
