@@ -3,7 +3,6 @@ import { cors } from 'hono/cors';
 import dotenv from 'dotenv';
 import messages from './routes/messages';
 import users from './routes/users'
-
 import { connect } from 'mongoose';
 import { logger } from 'hono/logger'
 import { prettyJSON } from 'hono/pretty-json'
